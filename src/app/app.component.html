@@ -13,6 +13,7 @@
       type="text"
       placeholder="Nueva tarea"
       [(ngModel)]="nuevaTarea"
+      (keydown.enter)="agregarTarea()"
       class="task-input"
     />
     <button (click)="agregarTarea()" class="add-btn">
